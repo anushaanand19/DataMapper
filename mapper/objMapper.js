@@ -4,7 +4,7 @@ module.exports = class ObjectMapper {
         sourceKey= sourceKey.split('.');
         sourceKey.map(key => {
             apiData = apiData[key];
-            return apiData
+            return apiData;
         })
         let mapData = JSON.parse(mapper);
         Object.keys(mapData).map(elem => {
